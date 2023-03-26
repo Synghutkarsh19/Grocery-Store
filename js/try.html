@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        div {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+
+        #main_page {
+            background-color: gray;
+        }
+
+        #change_back:hover {
+            background-color: green
+        }
+    </style>
+
+    <script>
+        document.querySelector("#show_hide").addEventListener("click", () => {
+            alert("here!")
+            var x = document.querySelector("main_page");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <button id="change_back">Change Background</button>
+
+    <div id="main_page">HTML</div>
+
+    <button id="show_hide">Show/Hide</button>
+
+</body>
+
+</html>
